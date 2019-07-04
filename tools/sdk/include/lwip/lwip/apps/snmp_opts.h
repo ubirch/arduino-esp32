@@ -54,7 +54,10 @@
  * and statistics counters you need to get MIB2 working.
  */
 #if !defined LWIP_SNMP || defined __DOXYGEN__
-#define LWIP_SNMP                       0
+#define LWIP_SNMP               1
+#error "LWIP SNMP"
+#else
+#error "NO SNMP"
 #endif
 
 /**
